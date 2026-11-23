@@ -4,150 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Soprano Syntax</title>
+  <meta name="description" content="Soprano Syntax: DoReChoir, Android apps and free knitting patterns.">
   <meta name="color-scheme" content="dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Share+Tech+Mono&display=swap">
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #000;
-      --ink: #fff;
-      --line: #fff;
-      --mono: "Share Tech Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-      --display: "Orbitron", system-ui, sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body { height: 100%; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--mono);
-    }
-
-    /* ---------- Header ---------- */
-    .site-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px 32px;
-      flex-wrap: wrap;
-      padding: 14px 24px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    /* ---------- Logo: "80s tech, black and white" ----------
-       All measurements are in em, scaled from the 150px master,
-       so the logo size is controlled by font-size alone. */
-    .logo {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.1067em;
-      font-size: 46px;          /* logo scale */
-      color: var(--ink);
-      text-decoration: none;
-      line-height: 1;
-      flex: none;
-    }
-    .logo:focus-visible { outline: 2px solid var(--ink); outline-offset: 6px; }
-
-    .logo-caption {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 0.0371em 0 0.0267em;
-      font-family: var(--mono);
-      font-size: 0.2133em;
-      line-height: 0.7;
-    }
-    .logo-caption .gap { width: 0.7em; }
-
-    .logo-mark {
-      position: relative;
-      height: 0.58em;
-    }
-    .logo-word {
-      display: block;
-      margin-top: -0.304em;
-      font-family: var(--display);
-      font-weight: 900;
-      font-size: 1em;
-      line-height: 1;
-      white-space: nowrap;
-    }
-    .logo-mark::after {          /* scanlines */
-      content: "";
-      position: absolute;
-      left: 0; right: 0;
-      top: 0.29em;
-      bottom: -0.2133em;
-      background: repeating-linear-gradient(
-        to bottom,
-        transparent 0, transparent 0.04em,
-        var(--bg) 0.04em, var(--bg) 0.06em
-      );
-      pointer-events: none;
-    }
-
-    /* ---------- Menu ---------- */
-    .menu {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px 8px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .menu a {
-      display: block;
-      padding: 10px 14px;
-      color: var(--ink);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      font-size: 15px;
-      line-height: 1;
-      border: 1px solid transparent;
-    }
-    .menu a::before { content: "."; }
-    .menu a:hover,
-    .menu a:focus-visible {
-      background: var(--ink);
-      color: var(--bg);
-      outline: none;
-    }
-    .menu a[aria-current="page"] { border-color: var(--line); }
-
-    @media (max-width: 640px) {
-      .site-header { padding: 12px 16px; }
-      .logo { font-size: 38px; }
-      .menu { width: 100%; }
-      .menu a { padding: 10px 10px; font-size: 14px; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#" aria-label="Soprano Syntax – start">
+    <a class="logo" href="index.html" aria-label="Soprano Syntax – start">
       <span class="logo-caption" aria-hidden="true"><span>S</span><span>O</span><span>P</span><span>R</span><span>A</span><span>N</span><span>O</span><span class="gap"></span><span>S</span><span>Y</span><span>N</span><span>T</span><span>A</span><span>X</span></span>
       <span class="logo-mark" aria-hidden="true"><span class="logo-word">sosyx</span></span>
     </a>
-
     <nav aria-label="Main">
       <ul class="menu">
-        <li><a href="#" aria-current="page">Start</a></li>
-        <li><a href="#">DoReChoir</a></li>
-        <li><a href="#">Android apps</a></li>
-        <li><a href="#">Knitting</a></li>
+        <li><a href="index.html" aria-current="page">Start</a></li>
+        <li><a href="dorechoir.html">DoReChoir</a></li>
+        <li><a href="android.html">Android apps</a></li>
+        <li><a href="knitting.html">Knitting</a></li>
       </ul>
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <h1>Soprano Syntax</h1>
+    <p class="lead">Small, carefully made software and a few things for the needles. Built and designed by one person.</p>
+    <!-- TODO: replace with a sentence or two about who you are and why you make these things. -->
+    <p class="dim">[Short introduction to the company: who is behind it and what it makes.]</p>
+
+    <h2>Products</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>DoReChoir</h3>
+        <p>A web app that gathers a choir's schedule, projects, repertoire and practicalities in one place.</p>
+        <a class="btn" href="dorechoir.html">Read more</a>
+      </article>
+      <article class="card">
+        <h3>Android apps</h3>
+        <p>Three apps for Android, free to download and try as APK files.</p>
+        <a class="btn" href="android.html">See the apps</a>
+      </article>
+      <article class="card">
+        <h3>Knitting</h3>
+        <p>Knitting patterns written by me, free to download as PDF.</p>
+        <a class="btn" href="knitting.html">Get the patterns</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">&copy; Soprano Syntax</footer>
 </body>
 </html>
