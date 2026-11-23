@@ -168,6 +168,7 @@ ul.plain li { margin-bottom: 0.4em; }
 }
 .card p { flex: 1; }
 .card .btn { margin-top: 4px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* ---------- Screenshots ---------- */
 .shots {
