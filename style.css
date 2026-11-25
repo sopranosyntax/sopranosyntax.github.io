@@ -131,6 +131,8 @@ p { margin: 0 0 1em; max-width: 40em; }
 .lead { font-size: 20px; line-height: 1.5; color: var(--ink); }
 .dim { color: var(--dim); }
 .note { font-family: var(--mono); color: var(--dim); font-size: 15px; letter-spacing: 0.03em; }
+.release { margin: 12px 0 0; }
+.release span { white-space: nowrap; }
 
 ul.plain { margin: 0 0 1em; padding-left: 1.2em; max-width: 40em; }
 ul.plain li { margin-bottom: 0.4em; }
