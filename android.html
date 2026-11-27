@@ -99,7 +99,7 @@
               /^(\d{4}-\d{2}-\d{2})/.exec((rel.assets && rel.assets[0] && rel.assets[0].updated_at) || '');
             if (!version || !date) return;
             el.textContent = '';
-            ['Version ' + version[1] + (build ? ' (build ' + build[1] + ')' : ''), 'published ' + date[1]]
+            ['Version ' + version[1], 'published ' + date[1]]
               .forEach(function (part, i) {
                 if (i) el.appendChild(document.createTextNode(' · '));
                 var span = document.createElement('span');
